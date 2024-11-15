@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+     $(document).ready(function() {
+    // 페이지가 로드될 때 첫 번째 탭에 깜빡임 효과 적용
+    $('#tab1').addClass('blink');
+
+    // 5초마다 다른 탭에 깜빡임 효과를 주기
+    setInterval(function() {
+        $('#tab2').addClass('blink'); // 두 번째 탭에 깜빡임 효과 추가
+        setTimeout(function() {
+            $('#tab2').removeClass('blink'); // 2초 후 깜빡임 제거
+        }, 2000);
+    }, 5000);
+});
+  </script>
+  <style>
+   .tabs ul {
+    list-style: none;
+    padding: 0;
+}
+
+.tabs .tab {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.blink {
+    animation: blink 1s infinite;  /* 1초 주기로 무한 반복 */
+}
+  </style>
+</head>
+<body>
+    <div class="tabs">
+        <ul>
+            <li class="tab" id="tab1">탭 1</li>
+            <li class="tab" id="tab2">탭 2</li>
+            <li class="tab" id="tab3">탭 3</li>
+        </ul>
+    </div>
+    <div class="content">
+        <p>여기에 내용이 들어갑니다.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+ 
+     
