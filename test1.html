@@ -8,7 +8,11 @@
 <script src="jquery-3.7.1.js"></script>
 <script src="./test1.js"></script>
 <script>
-
+    $(function () {
+        $('.header-ul>li>a').click(function () {
+            $(this).addClass('red').parent().siblings().finc('a').removeClass('red');
+        })
+    })
 </script>
 <style>
     *{
@@ -18,22 +22,22 @@
         padding: 0;
         -webkit-tap-highlight-color: rgba(0,0,0,0);
     }
-    html {
-        width:100%;
-        height: 100%; 
-    }
-    body {
-        width:100%;
-        height: 100%;
-        overflow: hidden;
-        background-color: #fff;
-    }
-    canvas {
-        width:100%;
-        height: 100%;
-    }
+     ul {
+        list-style-type: none;
+     }
+     a {
+        color: inherit;
+        text-decoration: none;
+     }
+     .red {
+        color:red;
+     }
 </style>
 <body>
-    
+    <ul class="header-ul">
+        <li><a href="#">hello</a></li>
+        <li><a href="#">hello</a></li>
+        <li><a href="#">hello</a></li>
+    </ul>
 </body>
 </html>

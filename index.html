@@ -7,8 +7,10 @@
     <script src="./jquery-3.7.1.js"></script>
     <script src="index.js"></script>
     <script>
-        $(document).ready(function () {
-            
+        $(document).ready(function () { 
+            $('.header-ul>li>a').off('click').on('click', function () {
+                $(this).toggleClass('skyblue');
+            });
         }) 
     </script>
     <link rel="stylesheet" href="index_ver2_header.css">
@@ -45,6 +47,9 @@
             }
         .skyblue {
             color:rgb(97, 146, 202);
+        }
+        ::selection {
+            background-color: rgb(187, 219, 255);
         }
 
 
@@ -182,11 +187,7 @@
         
         .about-2 {
             margin-left: 30px;
-        }
-
-        .about-2 h1 {
-
-        }
+        } 
         .about-2-detail span { 
             font-size: 12px;
             
@@ -246,10 +247,10 @@
 </head>
 <body>
     <header>  
-        <nav>
+        <nav> 
             <ul class="header-ul">
                 <li><a href="#home"><span class="underline"></span>about </a> </li> 
-                <li><a href="/index_page2.html"><span class="underline"></span>My-Portfolio </a> </li> 
+                <li><a href="/subpage.html"><span class="underline"></span>My-Portfolio </a> </li> 
                 <li><a class="contact" href="#home">contact<span class="underline"></span></a> </li> 
             </ul>
         </nav>
