@@ -1,83 +1,62 @@
-<html>
-  <head>
-    <title>My Now Amazing Webpage</title> 
-
-    <!-- 1. jQuery (Slick은 jQuery에 의존하므로, jQuery가 먼저 로딩되어야 함) -->
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-
-    <!-- 2. Slick CSS (두 가지 필수 CSS 파일: slick.css, slick-theme.css) -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-
-    <!-- 3. Slick JavaScript (마지막에 slick.min.js가 로딩되어야 함) -->
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    
-    <script>
-      $(document).ready(function() {
-        // 첫 번째 슬라이더 초기화
-        $('.post-wrapper').slick({
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          autoplay: true,
-          autoplaySpeed: 2000,
-        });
-
-        // 두 번째 슬라이더 초기화 (슬라이드 항목 추가 필요)
-        $('.single-item').slick({
-          autoplay: true,
-          autoplaySpeed: 2000,
-        });
-      });
-    </script>
-
-    <style>
-      .post-slider {
-        border: 1px solid red;
-      }
-
-      .post-slider .post-wrapper {
-        width: 84%;
-        height: 350px;
-        margin: 0px auto;
-        border: 1px dashed red;
-      }
-
-      .post-slider .post-wrapper .post {
-        width: 300px;
-        height: 330px;
-        display: inline-block;
-        background: gray;
-      }
-
-      .single-item {
-        width: 300px;
-        height: 330px;
-        background-color: yellowgreen;
-        position: fixed;
-        top: 0;
-        left: 0;
-      }
-    </style>
-  </head>
-  
-  <body>
-    <!-- 첫 번째 슬라이더 -->
-    <div class="post-slider">
-      <h1 class="sider-title">Trending Posts</h1>
-      <div class="post-wrapper">
-        <div class="post">John</div>
-        <div class="post">Doe</div>
-        <div class="post">Rovert</div>
-        <div class="post">Chalie</div>
-        <div class="post">유성ㅇㅅㅇ...</div>
-      </div>
-    </div>
-
-    <!-- 두 번째 슬라이더 (빈 콘텐츠를 추가해야 합니다) -->
-    <div class="single-item">
-      <div>Item 1</div>
-      <div>Item 2</div>
-      <div>Item 3</div>
-    </div>
-  </body>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="jquery-3.7.1.js"></script> 
+  <style>
+     body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            background-color: #f0f0f0;
+        }
+        .poster-container {
+          border:1px solid red;
+          width:300px;
+          height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            width: 100%;
+            height: 200px;
+        }
+        .poster {
+            width: 280px;
+            height: 80px;
+            background-color: #3498db;
+            margin: 0 5px;
+            border-radius: 5px;
+            transform-origin: bottom center;
+        }
+        .poster:nth-child(1) { transform: rotate(-20deg) translateY(30px); }
+        .poster:nth-child(2) { transform: rotate(-15deg) translateY(20px); }
+        .poster:nth-child(3) { transform: rotate(-10deg) translateY(10px); }
+        .poster:nth-child(4) { transform: rotate(-5deg) translateY(5px); }
+        .poster:nth-child(5) { transform: rotate(0deg); }
+        .poster:nth-child(6) { transform: rotate(0deg); }
+        .poster:nth-child(7) { transform: rotate(5deg) translateY(5px); }
+        .poster:nth-child(8) { transform: rotate(10deg) translateY(10px); }
+        .poster:nth-child(9) { transform: rotate(15deg) translateY(20px); }
+        .poster:nth-child(10) { transform: rotate(20deg) translateY(30px); }
+</style>
+</head>
+<body>
+  <div class="poster-container">
+    <div class="poster"></div>
+    <div class="poster"></div>
+    <div class="poster"></div>
+    <div class="poster"></div>
+    <div class="poster"></div>
+    <div class="poster"></div>
+    <div class="poster"></div>
+    <div class="poster"></div>
+    <div class="poster"></div>
+    <div class="poster"></div>
+</div>
+</body>
 </html>
