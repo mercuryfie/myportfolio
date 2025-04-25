@@ -1,0 +1,218 @@
+* {margin: 0;padding: 0;
+    box-sizing: border-box;}
+    ul {
+        list-style-type: none; 
+    }
+    a {
+        color:inherit;
+        text-decoration: none; 
+    }
+    body {
+        font-family: 'Open sans'; 
+        margin: 0;
+        padding: 0; 
+    }
+
+    .borel-regular {
+        font-family: "Borel", cursive;
+        font-weight: 400;
+        font-style: normal;
+        }
+    .skyblue {
+        color:rgb(97, 146, 202);
+    }
+    ::selection {
+        background-color: rgb(187, 219, 255);
+    }
+
+
+    /* 전체 레이아웃을 네모난 박스로 나누기 위한 스타일 */
+    section {
+        margin: 40px auto;
+        padding: 20px;
+        width: 80%;
+        max-width: 1200px;
+        background-color: #ffffff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+        border-radius: 8px; 
+    } 
+
+     /* header-------------------------------------- */
+    
+    header { 
+        width:200px;
+        height:800px; 
+        position: fixed;
+        top:0;
+        overflow: hidden; 
+    } 
+    .header-ul { 
+        margin-top: 200px;
+        position: relative;
+        display: inline-block;
+    }
+    .header-ul>li {
+        margin: 20px 0;
+        margin-left: 50px; 
+        text-align: left;
+         
+    }
+
+    .header-ul>li>a { 
+        color: #333;
+        font-family: "Borel", cursive;
+        font-size: 18px;
+        font-weight: 400; 
+        height: 20px; 
+        font-style: normal;
+        position: relative;
+    } 
+
+    .underline {
+        position: absolute;
+        left: 0px;
+        bottom: 0;
+        height: 2px;
+        width: 0; 
+        background-color: #333;
+        transform: translateX(0px);
+        transition: width 0.5s ease-in-out; 
+    }
+
+    .header-ul>li> a:hover .underline { 
+        width: 150px; 
+         
+    }
+
+    /* -------------------------------------- */
+    .toggle-img {
+        width:100px;
+        height: 100px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .toggle-img img {
+        width:100px;
+        height: 100px;
+    }
+    
+
+    /*about*/
+    .logo {
+        margin-left: 200px;
+        display: flex;
+        justify-content: center;
+    }
+    .logo img {
+        width:30%;
+        max-width: 400px; 
+        margin: 50px 0;
+        
+    }
+    .about {
+         margin:10px 20px;
+         display: flex;
+         justify-content: space-between;
+         
+    }
+    .about h1 {
+        font-size: 22px;
+        height: 40px;
+        line-height: 40px;
+        margin: 0 0 20px 0px; 
+    }
+
+    .about span {
+
+        font-size: 14px;  
+
+    }
+    .about-1 {
+        display: flex;
+        flex-flow: column;
+        margin-left: 30px;
+    }
+    .about-1>img {
+        /* width:15%;
+        height:15%; */
+        width:100px; 
+        border-radius: 10px;
+        float: left; 
+        
+    }
+    .sns-box {
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center; 
+        margin-left: -10px;
+    }
+    .sns-box img {
+        width:35px;
+        height: 35px;
+        border-radius: 5px; 
+        margin-top: 30px;
+    } 
+    .sns-box span { 
+        font-size: 12px;
+        font-family: 'noto sans kr'; 
+    }
+    
+    .about-2 {
+        margin-left: 30px;
+    } 
+    .about-2-detail span { 
+        font-size: 12px;
+        
+    }
+    /* .email {
+        border-radius: 5px;
+        background-image:linear-gradient(to right, red, orange,
+        yellow,green, blue, indigo,violet);
+        color:white;
+        font-weight: bold;
+        
+    } */
+     
+     
+
+    /* 각 섹션을 네모난 박스로 구분 */
+    section {
+        margin-left: 250px;
+        width:800px
+
+    }
+    .section-box {
+        border: 2px solid #ddd;
+        padding: 20px;
+        border-radius: 8px;
+        background-color: #f9f9f9;
+        margin-bottom: 20px;
+         
+    }
+
+
+    /* 버튼 스타일 */
+    button {
+        padding: 10px 20px;
+        background-color: #f4a261;
+        border: none;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    button:hover {
+        background-color: #e76f51;
+    } 
+
+    footer {
+        width:100vw;
+        height: 50px; 
+        color:#333;
+        font-size: 12px;
+        display: flex;
+        justify-content: center;
+        margin: 50px 0; 
+    }

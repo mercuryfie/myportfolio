@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Document</title>
+    <script src="./js/jquery-3.7.1.js"></script>
+    <script src="./js/index.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- <link rel="stylesheet" href="index_375.css"> -->
+    <script>
+        $(document).ready(function () { 
+            $('.header-ul>li>a').off('click').on('click', function () {
+                $(this).toggleClass('skyblue');
+            }); 
+            $('.active').css('color','blue');
+        }) 
+    </script> 
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Borel&display=swap" rel="stylesheet">
+ 
+    <link href="https://fonts.googleapis.com/css2?family=Borel&family=Delius+Swash+Caps&family=Noto+Sans+KR:wght@100..900&family=Patrick+Hand&family=Russo+One&display=swap" rel="stylesheet">
+
+    <!-- boot strap header ------------------- -->
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/headers/"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+    <link rel="stylesheet" href="./index_boots_header.css">
+        
+    <style>
+         
+    </style>
+</head>
+<body>    
+    <main>
+        <div id="wrap"> 
+        <section id="home">
+            <div id="header">
+                <ul class="header-ul">
+                    <li class="active"><a href="#home"><span class="underline"></span>about </a> </li> 
+                    <li><a href="./subpage.html"><span class="underline"></span>My-Portfolio </a> </li> 
+                    <li><a class="contact" href="#home">contact<span class="underline"></span></a> </li> 
+                </ul>
+
+            </div>
+ 
+            <div class="about">
+
+                <!-- <div class="logo">
+                    <img class="shark" src="img/shark.png" alt="img1">
+                </div>   -->
+                 <div class="content">
+                    <div class="about-1">
+                        <div class="toggle-img">
+                            <img class="selfy" src="./img/cat-5.jpg" alt="img1">
+                            <img src="./img/cat-2.jpg" alt="img1">
+                        </div>
+                        <div class="sns-box">
+                            <div class="sns-box-1">
+                                <a href="https://github.com/mercuryfie" target="_blank">
+                                    <img src="./img/github.png" alt=""><br>
+                                    <span>Github</span>
+                                </a>
+                            </div>
+                            <div class="sns-box-2">
+                                <a href="./img/1213 my-portfolio.pdf" target="_blank">
+                                    <img src="./img/sns4.jpg" alt="img"><br>
+                                    <span>PDF</span>
+                                </a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                     <div class="about-2"> 
+                        <div class="about2-1">
+                            <h1>이도원(Dowon Lee)</h1> 
+                            <span>지속 가능한 프로덕트 개발에 집중하는 
+                                <br>프론트엔드 개발자 이도원입니다. 🧑‍💻
+                                <br>유저 사이드에서 접근했을 때  
+                                <br>최적의 경험을 제공합니다. 📈
+                                <br>모듈화, 최적화를 통한 지속 가능한 
+                                <br>프로덕트 개발에 집중하고 있습니다. 👍
+                            </span> 
+
+                        </div>
+                        <div class="about2-2"> 
+                            <span class="span2">🇰🇷 Seoul, South Korea</span><br>
+                            <span class="span2">🎨 Figma, XD, Photoshop, AI, Premiere</span><br>
+                            <span class="span2">💻 Jquery, JavaScript, HTML, CSS, React</span><br>
+                            <span class="span2">📧 mohamin@naver.com</span>
+                        </div>
+                        
+                     </div>
+                 </div>
+                   
+                </div>
+            </div> 
+        </section>
+        </div>
+         
+        
+         
+    </main>
+    <footer>
+        <ul>
+            <li>Copyright©Dawn Lee - email : mohamin@naver.com</li>
+        </ul>
+    </footer>
+</body>
+</html>

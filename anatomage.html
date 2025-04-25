@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 1. jQuery (Slick은 jQuery에 의존하므로, jQuery가 먼저 로딩되어야 함) -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- 2. Slick CSS (두 가지 필수 CSS 파일: slick.css, slick-theme.css) -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+    <!-- 3. Slick JavaScript (마지막에 slick.min.js가 로딩되어야 함) -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script>
+        $(function () {
+
+
+            $('.subtab>li>a').css('display','none');
+            $('.subtab').css('display','none');
+            $('.subbox').css('display','none');
+             
+            // $('.maintab>li').mouseover(function () {
+            //     $(this).find('.subtab>li>a').stop().slideDown();
+            // })
+            // $('.maintab>li').mouseout(function () {
+            //     $(this).find('.subtab>li>a').stop().slideUp();
+            // }) 
+            $('.maintab>li').mouseover(function () { 
+                $('.subtab>li>a').stop().slideDown(500);
+                $('.subtab').stop().fadeIn(500); 
+                $('.subbox').stop().fadeIn(500); 
+            })
+            $('.maintab>li').mouseout(function () {
+                $('.subtab>li>a').stop().slideUp(500);
+                $('.subtab').stop().fadeOut(500);
+                $('.subbox').stop().fadeOut(500); 
+            }) 
+
+            // 첫 번째 슬라이더 초기화
+        $('.post-wrapper').slick({
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 2000,
+        });
+
+        // 두 번째 슬라이더 초기화 (슬라이드 항목 추가 필요)
+        $('.single-item').slick({
+          autoplay: true,
+          autoplaySpeed: 2000,
+        });
+             
+        })
+    </script>
+    <style>
+        * {margin: 0;padding: 0;
+        box-sizing: border-box;}
+        ul {list-style-type: none;}
+        a {
+            color:inherit;
+            text-decoration: none;
+        }
+
+        header {
+            width:100vw;
+            height:100px;
+            @background-color: beige; 
+            display: flex;
+            justify-content: space-between;
+        }
+        header>div {
+             
+        }
+        /* header logo  */
+        .logo {
+            width:20%;
+            overflow: hidden;
+        }
+        header .logo>img {
+            width:200px; 
+            float: left;
+            margin:20px 0 0 20px;
+            display: block;
+            object-fit: cover;
+        }
+
+        /* header navi */
+        .maintab {
+            display: flex;
+            position: relative;
+            margin-top:50px; 
+            margin-right: 10px;
+            width:100%;
+            height:100px;  
+        }
+        .maintab>li { 
+        }
+        .maintab>li>a {
+            display: block;
+            width:150px;
+            height:50px; 
+            font-family: 'Open sans';
+            font-weight: bold;
+            line-height: 50px;
+            text-align: center;
+            padding:0px;
+            color:#1a0028;
+            background-color: white;
+        }
+        .subtab {
+             
+            width:100%;
+            height:280px;
+            background-color: white;
+            z-index: 10;  
+            float: left;
+            position: relative;
+        }
+
+        .subtab>li { 
+            
+         }
+         
+        .subtab>li>a {
+            display: block;
+            width:150px;
+            height:50px;
+            background-color: white;
+            font-family: 'Open sans';
+            font-size: 14px;
+            line-height: 50px;
+            text-align: center; 
+            color:#999; 
+            border-right: 1px solid #ccc; 
+            
+        }
+        .subtab>li>a:last-child {
+            border-right: "";
+        }
+
+        .subtab>li>a:hover {
+             
+            background-color: white;
+            color:#1a0028;
+            font-weight: bold;
+            text-decoration: underline;
+             
+        } 
+        .subbox {
+            width:1000vw;
+            height:280px;
+            background-color: white;
+            position: absolute;
+            top:50px;
+            left:-1000px;
+            z-index: 2;
+
+        }
+        main {
+            width:80vw;
+            height:100vh;  
+            margin: 0 auto;
+        }
+
+        .con1 img{
+            width:100%;
+            height:100%;
+            object-fit: cover;
+        }
+        .single-item {
+            width:100px;
+            height:100px; 
+            position: relative;
+            z-index: 1;  
+        }
+
+        /*slick test*/
+
+        .post-slider {
+         
+      }
+
+      .post-slider .post-wrapper {
+        width: 84%;
+        height: 350px;
+        margin: 0px auto; 
+      }
+
+      .post-slider .post-wrapper .post {
+        width: 300px;
+        height: 300px;
+        display: inline-block;
+        background: gray;
+        margin:10px;
+      }
+
+      .single-item {
+        font-size: 25px;
+        width:600px;
+        height:50px;
+        margin: 30px 0 0 50px;
+        font-weight: bold;
+        font-family: 'Open sans';
+        color:#1a0028;
+      }
+       
+
+        footer {
+            width:100vw;
+            height:100px; 
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap"> 
+    <header>
+        <div class="logo">
+            <img src="./anatomic_img/Homepage-3.gif" alt="">
+        </div>
+        <div class="headmenu">
+            <nav>
+                <ul class="maintab">
+                    <li><a href="#">Products</a>
+                        <ul class="subtab">
+                            <li><a href="#">Anatomage Lessons</a></li>
+                            <li><a href="#">Anatomage Table</a></li>
+                            <li><a href="#">Anatomage Tablet</a></li>
+                            <li><a href="#">Anatomage VR</a></li>
+                            <li><a href="#"></a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Community</a>
+                        <ul class="subtab">
+                            <li><a href="#">Anatomage Share</a></li>
+                            <li><a href="#">Case Studies</a></li>
+                            <li><a href="#">Distributors</a></li>
+                            <li><a href="#">Blog</a> </li>
+                            <li><a href="#">Events</a> </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Gallery</a>
+                        <ul class="subtab"> 
+                            <li><a href="#">Media Coverage</a> </li>
+                            <li><a href="#">Image Library</a> </li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Support</a>
+                        <ul class="subtab"> 
+                            <li><a href="#">Table Support</a>  </li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Company</a>
+                        <ul class="subtab"> 
+                            <li><a href="#">About</a> </li>
+                            <li><a href="#">Technology</a> </li>
+                            <li><a href="#">Anatomage Medical</a> </li>
+                            <li><a href="#">Contact</a> </li>
+                            <li><a href="#"></a></li> 
+                        </ul>
+                         
+                    </li>
+                    <li><a href="#">International</a>
+                        <ul class="subtab">
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                        </ul>
+                    </li> 
+                    <li><div class="subbox"></div></li>
+                     
+                </ul>
+                
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="con1">
+            <div class="post-slider">
+                <div class="single-item">
+                    <div>Anatomy of the lower body</div> 
+                  </div>
+                <div class="post-wrapper">
+                  <div class="post"><a href="#"><img src="./anatomic_img/knee_anatomy_intro01.webp" alt=""></a></div>
+                  <div class="post"><a href="#"><img src="./anatomic_img/knee_hamstring_intro01.webp" alt=""></a></div>
+                  <div class="post"><a href="#"><img src="./anatomic_img/foot_anatomy_bones05.webp" alt=""></a></div>
+                  <div class="post"><a href="#"><img src="./anatomic_img/hip_anatomy_bones02.webp" alt=""></a></div>
+                  <div class="post"><a href="#"><img src="./anatomic_img/cumulative_trauma01.webp" alt=""></a></div>
+                   
+                </div>
+              </div>
+             
+        </div>  
+     
+    
+    </main>
+    <footer>
+
+    </footer>
+    </div>
+</body>
+</html>

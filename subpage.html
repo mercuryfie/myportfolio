@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./jquery-3.7.1.js"></script>
+    <link rel="stylesheet" href="./css/subpage.css">
+    <link rel="stylesheet" href="./css/index_375.css">
+    <script src="./js/index.js"></script>
+    <script>
+        $(function () {
+
+            $('.header-ul>li>a').click (function () {
+                $(this).toggleClass('skyblue');
+            }) 
+
+        })
+    </script>
+    <link rel="stylesheet" href="./css/index_ver2_header.css">
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+
+    <!-- font1 ------------------- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Borel&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Borel&family=Delius+Swash+Caps&family=Noto+Sans+KR:wght@100..900&family=Patrick+Hand&family=Russo+One&display=swap" rel="stylesheet">
+
+    <style>
+         
+    </style>
+</head>
+<body>
+    <header>  
+        <nav>
+            <ul class="header-ul">
+                <li><a href="./index.html"><span class="underline"></span>about </a> </li> 
+                <li><a href="./subpage.html" target="_blank"><span class="underline"></span>My-Portfolio </a> </li> 
+                <li><a href="./index.html">contact<span class="underline"></span></a> </li> 
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="wrap">
+            <div class="logo"> 
+                <img href="./index.html" class="shark" src="img/shark.png" alt="img1"> 
+            </div>
+            
+            <div id="wrap">
+                <section class="box box-1">
+                    <div class="img-box"> 
+                    <img src="./img/project-1.png" alt="img">
+                    </div>
+                    <div class="text-box">
+                        <ul>
+                            <li>서울시립천문대 홈페이지 리뉴얼</li>
+                            <li>천문 소식지(아티클) 목록 및 내용 페이지 UI 업데이트</li>
+                        </ul> 
+                        <div class="btn-box"> 
+                            <button onClick="window.location.href='https://mercuryfie.github.io/astro-seoul/sub_news_2.html', '_blank'">
+                                <img src="./img/cat-5.jpg" alt="">
+                                WebSite 바로가기</button>
+                            <button onClick="window.location.href='https://standbyqueue.notion.site/1586685914f4802ab758c017dbb37f47', '_blank'">
+                                <img src="./img/notion.jpg" alt="">
+                                Project 과정 기록</button>
+                        </div>
+                    </div>
+                </section>
+                <section class="box box-2">
+                    <div class="img-box"> 
+                    <img src="./img/project-2.png" alt="img">
+                    </div>
+                    <div class="text-box">
+                        <ul>
+                            <li>Godiva 홈페이지 제작</li>
+                            <li>Browser 의 Reflow 발생하는 원인 파악 및 수정 </li>
+                        </ul> 
+                        <div class="btn-box">
+                            <button onClick="window.location.href='https://mercuryfie.github.io/myportfolio/godiva.html', '_blank'">
+                                <img src="./img/cat-5.jpg" alt="">
+                                WebSite 바로가기</button>
+                            <button onClick="window.location.href='https://standbyqueue.notion.site/15e6685914f4809cbd98ed1bb66368e5?pvs=4','_blank'">
+                                <img src="./img/notion.jpg" alt="">
+                                Project 과정 기록</button>
+                        </div>
+                    </div>
+                </section>
+                <section class="box box-3">
+                    <div class="img-box"> 
+                    <img src="./img/project-3.png" alt="img">
+                    </div>
+                    <div class="text-box">
+                        <ul>
+                            <li>Toss Income 홈페이지 제작</li>
+                            <li>closure 함수를 각각의 변수에 할당해서 독립적으로 사용, 모듈화 </li>
+                        </ul> 
+                        <div class="btn-box">
+                            <button onClick="window.location.href='https://mercuryfie.github.io/income/','_blank'">
+                                <img src="./img/cat-5.jpg" alt="">
+                                WebSite 바로가기</button>
+                            <button onClick="window.location.href='https://standbyqueue.notion.site/Toss-income-1586685914f480788c5ec6de03934bbc','_blank'">
+                                <img src="./img/notion.jpg" alt="">
+                                Project 과정 기록</button>
+                        </div>
+                    </div>
+                </section>
+                <section class="box box-4">
+                    <div class="img-box"> 
+                    <img src="./img/project-4.png" alt="img">
+                    </div>
+                    <div class="text-box">
+                        <ul>
+                            <li>WekContents 홈페이지 제작</li>
+                            <li>자사 포트폴리오 업데이트 및 범주화 </li>
+                        </ul> 
+                        <div class="btn-box">
+                            <button onClick="window.location.href='http://wekcontents.com/?page_id=4044','_blank'">
+                                <img src="./img/cat-5.jpg" alt="">
+                                WebSite 바로가기</button>
+                            <button onClick="window.location.href='https://standbyqueue.notion.site/Wekcontents-15b6685914f481e29e02e6098bea6dcc','_blank'">
+                                <img src="./img/notion.jpg" alt="">
+                                Project 과정 기록</button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div> 
+    </main>
+    <footer>
+        <ul>
+            <li>Copyright©Dawn Lee - email : mohamin@naver.com</li>
+        </ul>
+    </footer>
+</body>
+</html>

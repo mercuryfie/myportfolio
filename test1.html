@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="./js/jquery-3.7.1.js"></script>  
+<link rel="stylesheet" href="./css/test.css">
+<script>
+    $(function () {
+        $('.header-ul>li>a').click(function () {
+            $(this).addClass('red').parent().siblings().finc('a').removeClass('red');
+        })
+    })
+</script>
+<style> 
+</style>
+<body>
+    <div class="deliveryStatusPopCon" id="deliveryStatusPopCon"  name="deliveryStatusPopCon">
+        <div class="deliveryStatusPop">
+            <div class="innerWrap">
+                <div class="deliveryStatusPop1-0">
+                    <h2 class="ttl">배송조회</h2>
+                    <h2 class="timeNotice">1월 1일 (월) 12:00 <br>배송완료 되었어요.</h2>
+                    <p>아직 상품을 받지 못하셨다면 택배사로 문의해 주세요.</p>
+                </div>
+                <div class="deliveryStatusPop1-1">
+                    <div class="baby1">
+                        <img src="./img/blog.png" alt="">
+                        <div>
+                            <p class="herbName">수입 박하 PA12341234 </p>
+                            <p class="date">1/1 (월) 구매</p>
+                        </div>
+                    </div>
+                    <div class="baby2">
+                        <p>외 7건</p>
+                        <p>주문 상세 >
+                            <i class="fa-solid fa-angle-right"></i>
+                        </p>
+                    </div> 
+                </div>
+                <div class="deliveryStatusPop1-2">
+                    <div class="baby1">
+                        <p class="title">송장번호</p> 
+                        <p>12341234</p>
+                    </div>
+                    <div class="baby2">
+                        <p class="title">배송업체 
+                            <i class="fa-solid fa-phone"></i>
+                        </p>
+                        <p>로젠택배</p>
+                    </div>  
+                </div>
+                <div class="deliveryStatusPop1-3">  
+                    <div class="baby1">
+                        <img src="./img/blog.png" alt="">
+                        <div>
+                            <p class="herbName">제약사명</p>
+                            <p class="date">판매자문의</p>
+                        </div>
+                    </div>
+                    <div class="baby2">
+                        <i class="fa-solid fa-phone"></i> 
+                    </div> 
+
+                </div>
+                <div class="deliveryStatusPop1-5">
+                    <!-- <div class="imgBox">
+                        <img src="./img/blog.png" alt="img">
+                        <img src="./img/blog.png" alt="img">
+                        <img src="./img/blog.png" alt="img"> 
+                    </div> -->
+                    <div class="progress">
+                        <div class="imgBox">
+                            <img src="./img/blog.png" alt="img"> 
+                            <p class="dot"></p>
+                            <p class="status">집화</p> 
+                        </div>
+                        <div class="imgBox"> 
+                            <img src="./img/blog.png" alt="img">
+                            <p class="dot"></p>
+                            <p class="status">배송중</p> 
+                        </div>
+                        <div class="imgBox"> 
+                            <img src="./img/blog.png" alt="img">
+                            <p class="dot"></p>
+                            <p class="status">배송완료</p> 
+                        </div> 
+        
+                    </div>
+
+                </div>
+                <div class="deliveryStatusPop1-4">  
+                    <div class="process">
+                        <div class="baby baby1">
+                            <p class="dot"></p>
+                            <p class="prog">2025. 01 .01 24:00</p>
+                            <p class="prog">ㅇㅇ제약사 물류센터</p>
+                            <p class="prog">집화완료</p>
+
+                        </div>
+                        <div class="baby baby2">
+                            <p class="dot"></p>
+                            <p class="prog">2025. 01 .01 24:00</p>
+                            <p class="prog">ㅇㅇ제약사 물류센터</p>
+                            <p class="prog">집화완료</p>
+
+                        </div>
+                        <div class="baby baby3">
+                            <p class="dot"></p>
+                            <p class="prog">2025. 01 .01 24:00</p>
+                            <p class="prog">ㅇㅇ제약사 물류센터</p>
+                            <p class="prog">집화완료</p>
+
+                        </div>
+                        <div class="baby baby4">
+
+                        </div>
+                        <div class="baby baby5">
+
+                        </div>
+                    </div> 
+                </div>
+                <!-- <div class="deliveryStatusPop1-1">
+                    <div class="dStatusTitle">
+                        <p class="pharm">제약사</p>
+                        <p class="pharmHerbName">제약사 약재명</p>
+                        <p class="list">탕전실 약재명</p>
+                        <p class="nation">원산지</p>
+                        <p class="herbCode">약재코드</p>
+                        <p class="herbName">탕전실 약재명</p>
+        
+                    </div>
+                    <div class="dStatusContents">
+                        <p  class="pharm" id="yakcompany" name="yakcompany">바른한방</p>
+                        <p class="pharmHerbName" id="yakherb" name="yakherb">감초</p>
+        
+                        <div class="list" id="yaklist" name="yaklist" >
+                        </div>
+                        <p  class="nation" id="yakorigin" name="yakorigin"></p>
+                        <p class="herbCode" id="yakcode" name="yakcode"></p>
+                        <p class="herbName" id="yakname" name="yakname"></p>
+        
+        
+        
+                    </div>
+                </div> -->
+                <!-- <div class="deliveryStatusLast">
+                    <button class="close">닫기</button>
+                    <button class="pop" id="popDStatus" name="popDStatus" data-hncode="" data-mm_origin="" data-mm_medicine="" data-mm_title_kor="" data-mm_origin_kor="" >매칭하기</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
