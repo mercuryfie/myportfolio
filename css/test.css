@@ -1075,22 +1075,36 @@ line-height: 30px;
 .deliveryStatusPop1-4 .process {
     border-left:1px solid #d7dfe8;
     margin-left: 20px;
-    width: 480px;
-    position: relative;
+    width: 480px; 
 
 }
-.deliveryStatusPop1-4 .baby {
-    border: 1px solid #ececec;
+.deliveryStatusPop1-4 .baby { 
     width: 480px;
     height: 60px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     color:#7c7c7c;
+    position: relative;
 }
 
 .deliveryStatusPop1-4 .baby >p {
     margin-left: 18px;
+}
+
+ 
+
+.deliveryStatusPop1-4 .process .baby .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border:3px solid #ccc;
+    background-color: #fff;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    left:-24px;
+
 }
 
 /* 
