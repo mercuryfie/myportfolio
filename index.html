@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./jquery-3.7.1.js"></script>
+    <script src="index.js"></script>
+    <script>
+        $(document).ready(function () { 
+            $('.header-ul>li>a').off('click').on('click', function () {
+                $(this).toggleClass('skyblue');
+            });
+        }) 
+    </script>
+    <link rel="stylesheet" href="index_ver2_header.css">
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Borel&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Borel&family=Delius+Swash+Caps&family=Noto+Sans+KR:wght@100..900&family=Patrick+Hand&family=Russo+One&display=swap" rel="stylesheet">
+
+    <style>
+        * {margin: 0;padding: 0;
+        box-sizing: border-box;}
+        ul {
+            list-style-type: none; 
+        }
+        a {
+            color:inherit;
+            text-decoration: none; 
+        }
+        body {
+            font-family: 'Open sans'; 
+            margin: 0;
+            padding: 0; 
+        }
+
+        .borel-regular {
+            font-family: "Borel", cursive;
+            font-weight: 400;
+            font-style: normal;
+            }
+        .skyblue {
+            color:rgb(97, 146, 202);
+        }
+        ::selection {
+            background-color: rgb(187, 219, 255);
+        }
+
+
+        /* 전체 레이아웃을 네모난 박스로 나누기 위한 스타일 */
+        section {
+            margin: 40px auto;
+            padding: 20px;
+            width: 80%;
+            max-width: 1200px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px; 
+        } 
+
+         /* header-------------------------------------- */
+        
+        header { 
+            width:200px;
+            height:800px; 
+            position: fixed;
+            top:0;
+            overflow: hidden; 
+        } 
+        .header-ul { 
+            margin-top: 200px;
+            position: relative;
+            display: inline-block;
+        }
+        .header-ul>li {
+            margin: 20px 0;
+            margin-left: 50px; 
+            text-align: left;
+             
+        }
+
+        .header-ul>li>a { 
+            color: #333;
+            font-family: "Borel", cursive;
+            font-size: 18px;
+            font-weight: 400; 
+            height: 20px; 
+            font-style: normal;
+            position: relative;
+        } 
+
+        .underline {
+            position: absolute;
+            left: 0px;
+            bottom: 0;
+            height: 2px;
+            width: 0; 
+            background-color: #333;
+            transform: translateX(0px);
+            transition: width 0.5s ease-in-out; 
+        }
+
+        .header-ul>li> a:hover .underline { 
+            width: 150px; 
+             
+        }
+
+        /* -------------------------------------- */
+        .toggle-img {
+            width:100px;
+            height: 100px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .toggle-img img {
+            width:100px;
+            height: 100px;
+        }
+        
+
+        /*about*/
+        .logo {
+            margin-left: 200px;
+            display: flex;
+            justify-content: center;
+        }
+        .logo img {
+            width:30%;
+            max-width: 400px; 
+            margin: 50px 0;
+            
+        }
+        .about {
+             margin:10px 20px;
+             display: flex;
+             justify-content: space-between;
+             
+        }
+        .about h1 {
+            font-size: 22px;
+            height: 40px;
+            line-height: 40px;
+            margin: 0 0 20px 0px; 
+        }
+
+        .about span {
+
+            font-size: 14px;  
+
+        }
+        .about-1 {
+            display: flex;
+            flex-flow: column;
+            margin-left: 30px;
+        }
+        .about-1>img {
+            /* width:15%;
+            height:15%; */
+            width:100px; 
+            border-radius: 10px;
+            float: left; 
+            
+        }
+        .sns-box {
+            display: flex;
+            justify-content: space-evenly;
+            text-align: center; 
+            margin-left: -10px;
+        }
+        .sns-box img {
+            width:35px;
+            height: 35px;
+            border-radius: 5px; 
+            margin-top: 30px;
+        } 
+        .sns-box span { 
+            font-size: 12px;
+            font-family: 'noto sans kr'; 
+        }
+        
+        .about-2 {
+            margin-left: 30px;
+        } 
+        .about-2-detail span { 
+            font-size: 12px;
+            
+        }
+        /* .email {
+            border-radius: 5px;
+            background-image:linear-gradient(to right, red, orange,
+            yellow,green, blue, indigo,violet);
+            color:white;
+            font-weight: bold;
+            
+        } */
+         
+         
+ 
+        /* 각 섹션을 네모난 박스로 구분 */
+        section {
+            margin-left: 250px;
+            width:800px
+
+        }
+        .section-box {
+            border: 2px solid #ddd;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+            margin-bottom: 20px;
+             
+        }
+ 
+
+        /* 버튼 스타일 */
+        button {
+            padding: 10px 20px;
+            background-color: #f4a261;
+            border: none;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #e76f51;
+        } 
+
+        footer {
+            width:100vw;
+            height: 50px; 
+            color:#333;
+            font-size: 12px;
+            display: flex;
+            justify-content: center;
+            margin: 50px 0; 
+        }
+    </style>
+</head>
+<body>
+    <header>  
+        <nav> 
+            <ul class="header-ul">
+                <li><a href="#home"><span class="underline"></span>about12 </a> </li>
+                <li><a href="./subpage.html"><span class="underline"></span>My-Portfolio </a> </li> 
+                <li><a class="contact" href="#home">contact<span class="underline"></span></a> </li> 
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="wrap">
+            <div class="logo"><img class="shark" src="img/shark.png" alt="img1"></div>
+        <section id="home">
+            <div class="about">
+                 <div class="about-1">
+                    <div class="toggle-img">
+                        <img class="selfy" src="./img/cat-5.jpg" alt="img1">
+                        <img src="./img/cat-2.jpg" alt="img1">
+                    </div>
+                    <div class="sns-box">
+                        <div class="sns-box-1">
+                            <a href="https://github.com/mercuryfie" target="_blank">
+                                <img src="./img/github.png" alt="">
+                                <span>Github</span>
+                            </a>
+                        </div>
+                        <div class="sns-box-2">
+                            <a href="./img/1213 my-portfolio.pdf" target="_blank">
+                                <img src="./img/sns4.jpg" alt="img">
+                                <span>PDF</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                </div>
+                 <div class="about-2">
+                    <h1>이도원(Dowon Lee)</h1>
+                    <span>지속 가능한 프로덕트 개발에 집중하는 프론트엔드 개발자 이도원입니다.
+                        <br><br>유저 사이드에서 경험하는 디테일에 최적의 경험과 
+                        모듈화, 최적화를 통한 지속 가능한 프로덕트 개발에 집중하고 있습니다. 
+                        </span> <br><br>
+                    <div class="about-2-detail">
+                        <span>🇰🇷 Seoul </span><br>
+                        <span>🎨 Figma, XD, Photoshop, AI, Premiere</span><br>
+                        <span>💻 Jquery, JavaScript, HTML, CSS, React</span><br>
+                        <span>📧 </span><span class="email"> mohamin@naver.com</span>  
+                    </div>
+                    
+                 </div>
+                   
+                </div>
+            </div> 
+        </section>
+        </div>
+         
+        
+         
+    </main>
+    <footer>
+        <ul>
+            <li>Copyright©Dawn Lee - email : mohamin@naver.com</li>
+        </ul>
+    </footer>
+</body>
+</html>

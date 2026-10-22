@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dawn Lee's Portfolio</title>
+    <script src="./jquery-3.7.1.js"></script>
+    <script>
+        $(function (){
+            $('.myname').ready(function () {
+                $('.name-btn').click(function () {
+                    $('.myname').show();
+                    let text = $('.myname').text();
+                    $('.myname').text('');
+
+                    for (let i = 0; i < text.length; i++) {
+                        setTimeout(function () {
+                            $('.myname').append(text.charAt(i));
+                            if (i === text.length - 1) {
+                                setTimeout(function () {
+                                    window.location.href= "/index-2nd.html"
+                                },500);
+                            }
+                        },i*100);
+                    
+                    }
+                })
+            })
+
+              
+        })
+    </script>
+    <link rel="stylesheet" href="/index.css">
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header> 
+         
+    </header>
+    <main> 
+            <section class="box-1">
+                <div class="hellobox"> 
+                    <div class="helloimg"> 
+                        <img src="./img/github-cha.png" alt="">
+                    </div>
+                    <div class="hellotext">
+                        <h3>Welcom to My-Portfio!</h3>
+                        <h3>Let's begin the adventure .</h3>
+                        <p>user name*</p>
+                    </div>
+                </div>
+                <div class="namebox">
+                    <h3 class="myname">Dawn Lee .</h3>
+                    <button class="name-btn">Start !</button>
+                </div>
+            </section> 
+    <footer>
+
+    </footer>
+</body>
+</html>

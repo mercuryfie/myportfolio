@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+      body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* 전체 레이아웃을 네모난 박스로 나누기 위한 스타일 */
+        section {
+            margin: 40px auto;
+            padding: 20px;
+            width: 80%;
+            max-width: 1200px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        section h2 {
+            color: #333;
+            font-size: 24px;
+        }
+
+        section p {
+            font-size: 16px;
+            color: #555;
+        }
+
+        /* 네비게이션 바 스타일 */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        header nav ul li {
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+        }
+
+        header nav ul li a:hover {
+            color: #f4a261;
+        }
+
+        /* 각 섹션을 네모난 박스로 구분 */
+        .section-box {
+            border: 2px solid #ddd;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+            margin-bottom: 20px;
+        }
+
+        /* 섹션 제목과 내용 스타일 */
+        .section-box h3 {
+            color: #444;
+            font-size: 20px;
+        }
+
+        .section-box p {
+            font-size: 14px;
+            color: #666;
+        }
+
+        /* 버튼 스타일 */
+        button {
+            padding: 10px 20px;
+            background-color: #f4a261;
+            border: none;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #e76f51;
+        }
+  </style>
+</head>
+<body>
+   <!-- 헤더: 네비게이션 바 -->
+   <header>
+    <nav>
+        <ul>
+            <li><a href="#home">홈</a></li>
+            <li><a href="#portfolio">작업물</a></li>
+            <li><a href="#process">디자인 프로세스</a></li>
+            <li><a href="#about">자기소개</a></li>
+            <li><a href="#contact">연락처</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- 홈 페이지 섹션 -->
+<section id="home">
+    <div class="section-box">
+        <h2>나의 UI/UX 포트폴리오</h2>
+        <p>UI/UX 디자이너로서의 여정을 소개합니다. 여기에서 내 디자인 작업을 확인하세요.</p>
+        <button>내 작업 보기</button>
+    </div>
+</section>
+
+<!-- 작업물 섹션 -->
+<section id="portfolio">
+    <div class="section-box">
+        <h2>내 작업물</h2>
+        <p>내가 진행한 다양한 UI/UX 프로젝트들을 확인할 수 있습니다. 각 프로젝트를 클릭하여 상세 내용을 확인하세요.</p>
+    </div>
+</section>
+
+<!-- 디자인 프로세스 섹션 -->
+<section id="process">
+    <div class="section-box">
+        <h2>디자인 프로세스</h2>
+        <p>디자인 문제를 해결하는 과정에 대해 설명합니다. 사용자 연구, 와이어프레임, 프로토타입을 포함한 디자인 단계를 공유합니다.</p>
+    </div>
+</section>
+
+<!-- 자기소개 섹션 -->
+<section id="about">
+    <div class="section-box">
+        <h2>자기소개</h2>
+        <p>UI/UX 디자이너로서 내가 추구하는 디자인 철학과 나의 경험을 소개합니다.</p>
+    </div>
+</section>
+
+<!-- 연락처 섹션 -->
+<section id="contact">
+    <div class="section-box">
+        <h2>연락처</h2>
+        <p>디자인 서비스에 대해 궁금한 점이나 프로젝트 관련 문의는 여기에서 연락해주세요.</p>
+    </div>
+</section>
+
+</body>
+</html>

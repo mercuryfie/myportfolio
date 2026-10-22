@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="jquery-3.7.1.js"></script> 
+  <style>
+     body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            background-color: #f0f0f0;
+        }
+        .poster-container {
+          border:1px solid red;
+          width:300px;
+          height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            width: 100%;
+            height: 200px;
+        }
+        .poster {
+            width: 280px;
+            height: 80px;
+            background-color: #3498db;
+            margin: 0 5px;
+            border-radius: 5px;
+            transform-origin: bottom center;
+        }
+        .poster:nth-child(1) { transform: rotate(-20deg) translateY(30px); }
+        .poster:nth-child(2) { transform: rotate(-15deg) translateY(20px); }
+        .poster:nth-child(3) { transform: rotate(-10deg) translateY(10px); }
+        .poster:nth-child(4) { transform: rotate(-5deg) translateY(5px); }
+        .poster:nth-child(5) { transform: rotate(0deg); }
+        .poster:nth-child(6) { transform: rotate(0deg); }
+        .poster:nth-child(7) { transform: rotate(5deg) translateY(5px); }
+        .poster:nth-child(8) { transform: rotate(10deg) translateY(10px); }
+        .poster:nth-child(9) { transform: rotate(15deg) translateY(20px); }
+        .poster:nth-child(10) { transform: rotate(20deg) translateY(30px); }
+</style>
+</head>
+<body>
+  <div class="poster-container">
+    <div class="poster"></div>
+    <div class="poster"></div>
+    <div class="poster"></div>
+    <div class="poster"></div>
+    <div class="poster"></div>
+    <div class="poster"></div>
+    <div class="poster"></div>
+    <div class="poster"></div>
+    <div class="poster"></div>
+    <div class="poster"></div>
+</div>
+</body>
+</html>

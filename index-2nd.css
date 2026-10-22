@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+::selection {
+    background-color: #7b6ee2 ; /* 드래그한 텍스트의 배경색 */
+    color: white;              /* 드래그한 텍스트의 글자색 */
+}
+
+body {
+    color:#0d1416;
+    font-family: 'consolas'; 
+} 
+header {
+    width: 100vw;
+    height: 200px; 
+    position: sticky;
+    z-index: 100;
+    border: 1px solid  red;
+}
+
+.logo-box img {
+    width: 200px;
+}
+
+
+
+/* main---------------------------------------------*/
+main {
+    width: 100vw; 
+     
+
+}
+#wrap {
+    margin: 0 auto;
+    width: 1200px;
+    height: 500px;
+    border: 1px solid  red; 
+}
+ 
+.logo-box {
+    width: 1200px;
+    height: 500px;
+    border: 1px solid  blue;
+    position: relative;
+}
+.logo-box img {
+     position: absolute;
+     top:0;
+     left:0;
+    object-fit: cover;
+    scale: 0.5;
+    border: 1px solid  red;
+}
+ 
+ 
+
+@media screen  and (max-width:425px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        
+    }
+    header {
+        background-color: red;
+    } 
+}

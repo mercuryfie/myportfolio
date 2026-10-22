@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="jquery-3.7.1.js"></script> 
+  <style>
+    * {
+      margin: 0;padding: 0;
+    }
+     body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        #hello-text {
+            fill: none;
+            stroke: #000;
+            stroke-width: 2;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+        svg {
+          width:250px;
+          height: 250px;
+          border:1px solid red;
+        }
+
+        svg:nth-child(2) {
+          width: 600px;
+        }
+</style>
+</head>
+<body>
+
+  <svg>
+
+    <path d="M10 10 H 90 V 90 H 10 L 10 10"/>
+
+  <!-- 점 -->
+  <circle cx="10" cy="10" r="2" fill="red"/>
+  <circle cx="90" cy="90" r="2" fill="orange"/>
+  <circle cx="90" cy="10" r="2" fill="green"/>
+  <circle cx="10" cy="90" r="2" fill="blue"/>
+  
+  </svg> 
+  
+  <svg width="300" height="100" viewBox="0 0 300 100">
+    <path d="M 10 80 H 20 10"></path>
+    <path d="M10 10 C 20 20, 40 20, 50 10" stroke="black" fill="transparent"/>
+    <path d = "M70 10 C 60 20, 120 20, 120 10" stroke="black" fill="transparent">
+    
+     
+  <!-- H를 위쪽에서 시작 -->
+  <path id="hello-text" d="M50,150 L50,50 L100,50 L100,150" stroke="black" fill="transparent"/>
+    
+  <!-- H를 오른쪽에서 시작 -->
+  <path id="hello-text" d="M150,100 L150,50 L200,50 L200,100 L150,100 L150,150 L200,150 L200,100" stroke="blue" fill="transparent"/>
+  
+  <!-- H를 아래쪽에서 시작 -->
+  <path id="hello-text" d="M250,150 L250,50 L300,50 L300,150" stroke="red" fill="transparent"/>
+
+  <circle cx="10" cy="10" r="2" fill="blue"/>
+  <circle cx="50" cy="0" r="2" fill="blue"/>
+  <circle cx="10" cy="50" r="2" fill="blue"/> 
+   
+
+
+</svg>
+<script>
+    const text = document.getElementById('hello-text');
+    const length = text.getTotalLength();
+
+    text.style.strokeDasharray = length;
+    text.style.strokeDashoffset = length;
+
+    setTimeout(() => {
+        text.style.transition = 'stroke-dashoffset 3s ease-in-out';
+        text.style.strokeDashoffset = '0';
+    }, 500);
+</script>
+</body>
+</html>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./jquery-3.7.1.js"></script>
+    <script>
+
+    </script>
+    <style>
+        * {margin: 0;padding: 0;
+        box-sizing: border-box;}
+        ul {
+            list-style-type: none;
+        }
+        a {
+            color:inherit;
+            text-decoration: none;
+        }
+        body {
+            font-family: 'Open sans'; 
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* 전체 레이아웃을 네모난 박스로 나누기 위한 스타일 */
+        section {
+            margin: 40px auto;
+            padding: 20px;
+            width: 80%;
+            max-width: 1200px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        section h2 {
+            color: #333;
+            font-size: 24px;
+        }
+
+        section p {
+            font-size: 16px;
+            color: #555;
+        }
+
+        /* 네비게이션 바 스타일 */
+        header {
+            background-color: white; 
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        #home {
+            height:300px;
+        }
+
+        /*about*/
+        .logo img {
+            width:30%;
+        }
+        .about {
+             margin:20px;
+        }
+        .about h1 {
+            font-size: 25px;
+            height: 40px;
+            line-height: 40px;
+            margin: 0 0 20px 0px;
+            font-weight: bold;
+            letter-spacing: 2px; 
+        }
+
+        .about span {
+
+            font-size: 15px;
+            height: 20px;
+            line-height: 20px; 
+            letter-spacing: 1px;
+
+        }
+        .about img {
+            /* width:15%;
+            height:15%; */
+            width:100px; 
+            border-radius: 10px;
+            float: left;
+            margin:0 30px;
+        }
+        .sns {
+            margin-left: 150px;
+        }
+        .sns img {
+            display: block;
+            width:50px;
+            height: 50px;
+            float: left;
+            margin:20px 10px; 
+            border: 1px solid #ccc;
+             
+        }
+
+
+        header nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        header nav ul li {
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 15px;
+            font-family: 'Open sans';
+            letter-spacing: 2px;
+            font-weight: bold;
+        }
+
+        header nav ul li a:hover {
+            color: turquoise;
+            font-weight: bold;
+        }
+
+        /* 각 섹션을 네모난 박스로 구분 */
+        .section-box {
+            border: 2px solid #ddd;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+            margin-bottom: 20px;
+        }
+
+        /* 섹션 제목과 내용 스타일 */
+        .section-box h3 {
+            color: #444;
+            font-size: 20px;
+        }
+
+        .section-box p {
+            font-size: 14px;
+            color: #666;
+        }
+
+        /* 버튼 스타일 */
+        button {
+            padding: 10px 20px;
+            background-color: #f4a261;
+            border: none;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #e76f51;
+        }
+    </style>
+</head>
+<body>
+    <header> 
+        <div class="logo"><img class="shark" src="img/shark.png" alt="img1"></div>
+        <nav>
+            <ul>
+                <li><a href="#home">ABOUT</a></li> 
+                <li><a href="http://wekcontents.com/?page_id=4044" target="_blank">WEB-DESIGN</a></li> 
+                <li><a href="./godiva.html" target="_blank">FRONT-END</a></li>
+                <li><a href="https://doneandonly.github.io/myportfolio/anatomage" target="_blank">ANATOMAGE</a></li>  
+                 
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <div class="about">
+                 <div class="aboutleft">
+                    <img class="selfy" src="./img/self-photo.jpg" alt="img1">
+                    <h1>DOWON LEE</h1>
+                    <span>  🇰🇷 South Korea, Seoul </span><br>
+                    <span>🎨 Figma, XD, Photoshop, AI, Premiere</span><br>
+                    <span>💻 Jquery, JavaScript, HTml, CSS, React</span><br>
+                    <span>📧 mohamin@naver.com</span> <br>
+                 </div>
+                  
+                     
+                    <div class="sns"> 
+                        <a href="http://github.com/doneandonly/myportfolio" target="_blank"><img src="./img/github.png" alt=""></a>
+                        <a href="https://blog.naver.com/standbyqueue/223654921170" target="_blank"><img src="./img/blog.png" alt="">
+                        <a href="https://www.instagram.com/standbyqueue/profilecard/?igsh=YmQxMG02eTYxY2s3" target="_blank"><img src="./img/sns3.jpg" alt=""></a>
+                    </div>
+                </div>
+            </div> 
+        </section>
+        
+        <!-- 작업물 섹션 -->
+        <section class="carrer">
+            <h3>경력 및 활동사항</h3><br>
+            <h4>(주)엑스포라인</h4>
+            <p>로지스틱을 기반으로 전시화물, 외교부 DIP, 생동물 등 다양한 화물과
+                일부 특수 아이템군에 특화된 운송 서비스에 대한 데이터 분석 기반
+                홈페이지 등 UIUX 디자인</p><br>
+
+            <h4>(주)위케이콘텐츠</h4>
+            <p>콘텐츠 제작 회사의 이미지에 맞는
+                최신 트렌드의 콘텐츠 성향을 지향하는 홈페이지 UIUX디자인</p><br> 
+
+            <h4>삼성물산(주) 에버랜드 리조트</h4>
+            <p>마케팅/서비스 기획/ 테마파크 컨셉 프로모션 관련 디자인/콘텐츠 제작 등 </p><br> 
+
+            <h4>공공입찰 제안서 PT 및 사업 PM 수행</h4>
+            <p>-KOICA 상설전시관 "SDG 13 지속가능한 미래가 오다 (ODA)" <br> 
+                -KOCACA 문예회관 영상 기획 <br> 
+                -예술의전당 노부스콰르텟 공연영상 기획<br> 
+                -수소융합얼라이언스 수소에너지 홍보영상 기획 </p><br> 
+            
+            <h4>일러스트/웹툰 제작/스토리텔링</h4>
+            <p>-2022 Livmate (국민은행) NFT 공모전 "리브랑" 제작<br> 
+                2021 해양문화콘텐츠 사업공모전 웹툰 부분 "HOME" 제작<br> 
+                2021 고양특례시 30년주년 원년 기념사업 공모전 웹툰 부분 "어서오세요, 고양시에" 제작<br> 
+                2021 연구실 안전 콘텐츠 "어서와, 연구실은 처음이지?" 제작<br> 
+                2006 고양 호수예술 축제 운문 부분 "나는 상자, 그대는 나" 최우수상 <br>  
+            </p><br> 
+        </section>
+        
+         
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
