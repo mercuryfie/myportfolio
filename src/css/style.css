@@ -217,3 +217,111 @@ footer {
     justify-content: center;
     margin: 50px 0;
 }
+
+
+/* flex type start  -----*/
+
+.flexType1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.flexType1-1 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.flexType2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.flexType2-1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.flexType3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*ddd*/
+}
+
+.flexType3-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+
+.flexType3-2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flexType4 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.flexType5 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.flexType6 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.flexType7 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.flexCol {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.flexCol2 {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexCol2-1 {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.flexCol2-2 {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.flexStart {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+/*  ---- flex type end*/
