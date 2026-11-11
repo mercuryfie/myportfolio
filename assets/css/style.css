@@ -38,6 +38,26 @@ section {
     /*border-radius: 8px; */
 }
 
+/* start fontType-------------------------------------- */
+
+.source-code-pro {
+    font-family: "Source Code Pro", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.source-code-pro-light {
+    font-family: "Source Code Pro", monospace;
+    font-weight: 300;
+}
+
+.source-code-pro-bold {
+    font-family: "Source Code Pro", monospace;
+    font-weight: 700;
+}
+
+/* end fontType-------------------------------------- */
 /* header-------------------------------------- */
 
 header {
@@ -85,6 +105,44 @@ header {
 
 }
 
+/* -------------------------------------- */
+/* start index.html-------------------------------------- */
+
+.introWrap {
+    background-color: #0C0E12;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.welcomeBox {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: 580px;
+    height: 320px;
+    border:1px solid #cccccc60;
+    border-radius: 10px;
+}
+
+.welcomeBox .img_prof {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow:
+            inset 0 0 5px rgba(0, 0, 0, 0.35),
+            inset 0 1px 1px rgba(255, 255, 255, 0.25);
+
+}
+
+.welcomeBox .welcome.text3 {
+    color: aqua;
+}
+
+
+
+/* end index.html-------------------------------------- */
 /* -------------------------------------- */
 .toggle-img {
     width:100px;
