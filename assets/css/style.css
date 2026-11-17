@@ -393,3 +393,38 @@ footer {
     align-items: center;
 }
 /*  ---- flex type end*/
+
+/*  ---- margin type start*/
+
+
+.mr5 {
+    margin-right: 5px;
+}
+
+.mr10 {
+    margin-right: 10px;
+}
+
+
+.mr20 {
+    margin-right: 20px;
+}
+.mr40 {
+    margin-right: 40px;
+}
+.ml5 {
+    margin-left: 5px;
+}
+.ml10 {
+    margin-left: 10px;
+}
+
+.ml20 {
+    margin-left: 20px;
+}
+.ml40 {
+    margin-left: 40px;
+}
+
+/*  ---- margin type end*/
+
